@@ -127,12 +127,12 @@ public class CordovaPluginJavaConnection extends CordovaPlugin {
         }
     }
     
-    // /**
-    //  * Devuelve una cadena del JSONArray o una cadena vacia.
-    //  * @param args  Array de datos en formato JSON.
-    //  * @param index Posición que se esta buscando.
-    //  * @return Una cadena del JSONArray o una cadena vacia.
-    //  */
+    /**
+     * Devuelve una cadena del JSONArray o una cadena vacia.
+     * @param args  Array de datos en formato JSON.
+     * @param index Posición que se esta buscando.
+     * @return Una cadena del JSONArray o una cadena vacia.
+     */
     private String getStringSafe(final JSONArray args, final int index) {
         try {
             return args.getString(index);
