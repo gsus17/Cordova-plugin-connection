@@ -72,7 +72,10 @@ public class CordovaPluginJavaConnection extends CordovaPlugin {
             callbackContext.sendPluginResult(r);
         }
     }
-
+    
+    /**
+     * Notifica a la app que ocurrio un error.
+     */
     public static void sayHelloFail(String message) {
         final CallbackContext callbackContext = CordovaPluginJavaConnection.sayHelloContext;
         if (callbackContext != null) {
@@ -94,7 +97,7 @@ public class CordovaPluginJavaConnection extends CordovaPlugin {
                 try {
 
                     String value = getStringSafe(args, 0);
-                    String msg = "hola como estas? " +  value;
+                    String msg = "Hola " +  value;
                     sayHelloContext(callbackContext, msg);
 
                 } catch (Exception ex) {
