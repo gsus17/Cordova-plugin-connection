@@ -1,5 +1,8 @@
 @ECHO OFF
 TITLE Inicializa el proyecto
+ECHO Instalando bower general.
+CALL npm i -g cordova
+CALL npm i -g bower
 ECHO Descargando dependencias npm
 CALL npm i
 ECHO Descargando dependencias bower
